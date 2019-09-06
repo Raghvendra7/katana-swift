@@ -7,16 +7,12 @@ documentation:
 
 cocoapods:
   public_repo:
-    email: katana@bendingspoons.com
+    email: opensource@bendingspoons.com
     author: Bending Spoons
-  skip_linting: true  # Cannot lint because it depends on Katana, released always together
-
-carthage:
-  - Katana
-  - KatanaElements
+  skip_linting: true
 
 tests:
   runs:
     - scheme: Katana
-      sdk: iphonesimulator10.0
-      simulator: platform=iOS Simulator,OS=10.0,name=iPhone 6s
+      sdk: iphonesimulator12.2
+      simulator: platform=iOS Simulator,OS=12.2,name=iPhone 8
